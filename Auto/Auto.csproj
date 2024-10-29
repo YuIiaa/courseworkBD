@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B7D3CB7-5B0A-4241-9AA2-9F25920259E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Auto</RootNamespace>
+    <AssemblyName>Auto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delays.Designer.cs">
+      <DependentUpon>Delays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nf_optovikDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nf_optovikDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nf_optovikDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nf_optovikDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="nf_optovikDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nf_optovikDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments.Designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Routes.Designer.cs">
+      <DependentUpon>Routes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trasportationDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trasportationDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicles.Designer.cs">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delays.resx">
+      <DependentUpon>Delays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Routes.resx">
+      <DependentUpon>Routes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles.resx">
+      <DependentUpon>Vehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="nf_optovikDataSet.xsc">
+      <DependentUpon>nf_optovikDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="nf_optovikDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nf_optovikDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nf_optovikDataSet.xss">
+      <DependentUpon>nf_optovikDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="nf_optovikDataSet1.xsc">
+      <DependentUpon>nf_optovikDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="nf_optovikDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nf_optovikDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nf_optovikDataSet1.xss">
+      <DependentUpon>nf_optovikDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="nf_optovikDataSet2.xsc">
+      <DependentUpon>nf_optovikDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="nf_optovikDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nf_optovikDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nf_optovikDataSet2.xss">
+      <DependentUpon>nf_optovikDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="trasportationDataSet.xsc">
+      <DependentUpon>trasportationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet.xss">
+      <DependentUpon>trasportationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet1.xsc">
+      <DependentUpon>trasportationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet1.xss">
+      <DependentUpon>trasportationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet2.xsc">
+      <DependentUpon>trasportationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet2.xss">
+      <DependentUpon>trasportationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet3.xsc">
+      <DependentUpon>trasportationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet3.xss">
+      <DependentUpon>trasportationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet4.xsc">
+      <DependentUpon>trasportationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet4.xss">
+      <DependentUpon>trasportationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet5.xsc">
+      <DependentUpon>trasportationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet5.xss">
+      <DependentUpon>trasportationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet6.xsc">
+      <DependentUpon>trasportationDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet6.xss">
+      <DependentUpon>trasportationDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet7.xsc">
+      <DependentUpon>trasportationDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet7.xss">
+      <DependentUpon>trasportationDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet8.xsc">
+      <DependentUpon>trasportationDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="trasportationDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trasportationDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trasportationDataSet8.xss">
+      <DependentUpon>trasportationDataSet8.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
